@@ -42,3 +42,21 @@ You can resume the pipeline run by adding the following argument to your previou
 2022-08-19 15:50:52,140 - hello_world.pipelines.default.nodes - INFO - Hello Kedro!
 2022-08-19 15:50:52,142 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
 2022-08-19 15:50:52,143 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2022-08-23 11:14:19,976 - kedro.framework.session.session - INFO - Kedro project hello-world-kedro
+2022-08-23 11:14:20,036 - kedro.pipeline.node - INFO - Running node: define_greet: return_greeting(None) -> [return-greet]
+2022-08-23 11:14:20,039 - kedro.io.data_catalog - INFO - Saving data to 'return-greet' (MemoryDataSet)...
+2022-08-23 11:14:20,042 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2022-08-23 11:14:20,044 - kedro.io.data_catalog - INFO - Loading data from 'return-greet' (MemoryDataSet)...
+2022-08-23 11:14:20,047 - kedro.pipeline.node - INFO - Running node: join_with_greet: join_statements([return-greet]) -> None
+2022-08-23 11:14:20,050 - hello_world.pipelines.default.nodes - INFO - Hello Kedro!
+2022-08-23 11:14:20,053 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2022-08-23 11:14:20,055 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
+2022-08-23 11:16:33,646 - kedro.framework.session.session - INFO - Kedro project hello-world-kedro
+2022-08-23 11:16:33,670 - kedro.pipeline.node - INFO - Running node: define_greet: return_greeting(None) -> [return-greet]
+2022-08-23 11:16:33,673 - kedro.io.data_catalog - INFO - Saving data to 'return-greet' (MemoryDataSet)...
+2022-08-23 11:16:33,676 - kedro.runner.sequential_runner - INFO - Completed 1 out of 2 tasks
+2022-08-23 11:16:33,677 - kedro.io.data_catalog - INFO - Loading data from 'return-greet' (MemoryDataSet)...
+2022-08-23 11:16:33,680 - kedro.pipeline.node - INFO - Running node: join_with_greet: join_statements([return-greet]) -> None
+2022-08-23 11:16:33,684 - hello_world.pipelines.default.nodes - INFO - Hello Kedro!
+2022-08-23 11:16:33,686 - kedro.runner.sequential_runner - INFO - Completed 2 out of 2 tasks
+2022-08-23 11:16:33,688 - kedro.runner.sequential_runner - INFO - Pipeline execution completed successfully.
