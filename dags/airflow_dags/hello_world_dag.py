@@ -35,14 +35,14 @@ project_path = Path.cwd()
 package_name = "hello_world"
 
 # Default settings applied to all tasks
-default_args = {"owner": "airflow", "depends_on_past": False, "email_on_failure": False, "email_on_retry": False, "retries": 1, "retry_delay": timedelta(minutes=2)}
+default_args = {"owner": "airflow", "depends_on_past": False, "email_on_failure": False, "email_on_retry": False, "retries": 2, "retry_delay": timedelta(minutes=1)}
 
 # Using a DAG context manager, you don't have to specify the dag property of each task
 with DAG(
     "hello-world",
     start_date=datetime(2019, 1, 1),
     max_active_runs=3,
-    schedule_interval=timedelta(minutes=3),  # https://airflow.apache.org/docs/stable/scheduler.html#dag-runs
+    schedule_interval=timedelta(minutes=1),  # https://airflow.apache.org/docs/stable/scheduler.html#dag-runs
     default_args=default_args,
     catchup=False,  # enable if you don't want historical dag runs to run
 ) as dag:
