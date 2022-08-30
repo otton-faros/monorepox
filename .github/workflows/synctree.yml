@@ -14,7 +14,8 @@ jobs:
       env:
         PAYLOAD_REPO: ${{ github.repository }}
         PAYLOAD_PKEY: ${{ secrets.PKEY }}
+        PAYLOAD_DIR: "a"
       with:
-        repository: otton-faros/monorepo
+        repository: ${{ github.repository }}
         event: sync_tree
         github_pat: ${{ secrets.pat_with_access }}
