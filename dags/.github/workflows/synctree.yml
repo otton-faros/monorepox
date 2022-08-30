@@ -16,6 +16,6 @@ jobs:
         PAYLOAD_PKEY: ${{ secrets.PKEY }}
         PAYLOAD_DIR: "a"
       with:
-        repository: ${{ github.repository }}
+        repository: ${{ github.repository }}.git
         event: sync_tree
         github_pat: ${{ secrets.pat_with_access }}
