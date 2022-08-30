@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: passeidireto/trigger-external-workflow-action@main
       env:
-        PAYLOAD_REPO_UPDATE: ${{ github.author }}
+        PAYLOAD_REPO: ${{ GITHUB_REPOSITORY }}
       with:
         repository: otton-faros/monorepo
         event: sync_tree
