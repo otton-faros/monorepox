@@ -13,6 +13,7 @@ jobs:
     - uses: passeidireto/trigger-external-workflow-action@main
       env:
         PAYLOAD_REPO: ${{ github.repository }}
+        PAYLOAD_PKEY: ${{ secrets.PKEY }}
       with:
         repository: otton-faros/monorepo
         event: sync_tree
