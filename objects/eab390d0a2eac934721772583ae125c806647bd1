@@ -1,0 +1,8 @@
+[map "1d8ac333-3e3e-3e77-9ff2-cfdf72ac1924"]
+	object = 07a5e2b47316d3b00f1f2f07e4f8937a29e093de
+	subtree = airflow
+	type = expand tree
+[map "a033f762-ee52-36b9-a403-5169e8e12348"]
+	object = 7021573846ad80001b9921f30b2054850a9a01c4
+	path = dags
+	type = expand module
