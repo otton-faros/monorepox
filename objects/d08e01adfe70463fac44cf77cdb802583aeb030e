@@ -2,3 +2,6 @@
 	object = eab390d0a2eac934721772583ae125c806647bd1
 	subtree = airflow
 	type = extract tree
+[map "ecc38455-011a-35cd-a4f4-d98f759880f8"]
+	object = 636b19db21cd711d311615f5b21e73ee3f894e8c
+	type = extract tree + exclude

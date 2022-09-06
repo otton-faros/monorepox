@@ -2,3 +2,7 @@
 	object = eab390d0a2eac934721772583ae125c806647bd1
 	subtree = airflow
 	type = extract tree
+[map "76e6bd97-5ab3-372c-9133-ee54dc93585a"]
+	object = 5749b020961694ff3ba02ceb93b92097322dd60b
+	path = dags
+	type = expand module

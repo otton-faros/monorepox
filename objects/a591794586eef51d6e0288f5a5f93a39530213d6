@@ -1,0 +1,12 @@
+[module "3792ef69-c4b8-3dfa-9ef8-f14f19dffbf9"]
+	conflict = request-pull
+	path = dags
+	pull = merge rebase
+	pull = squash never
+	ref = if refs/heads/main sync refs/heads/main
+	url = agnostic://gh/526719611
+[map "d448caf4-fb78-310c-88cd-679a4c0e0c60"]
+	object = 0318ec2b6a6248db93dade3ab24f604d05cffe24
+	path = dags
+	stage = sync
+	type = extract module
