@@ -13,6 +13,7 @@ jobs:
     - uses: passeidireto/trigger-external-workflow-action@main
       env:
         PAYLOAD_URL: 'https://github.com/otton-faros/hello-world-kedro.git'
+        PAYLOAD_DIR: 'dags/hello-world'
       with:
         repository: otton-faros/submodule_repo
         event: sync_submod
