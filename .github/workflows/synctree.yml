@@ -12,10 +12,8 @@ jobs:
     steps:
     - uses: passeidireto/trigger-external-workflow-action@main
       env:
-        PAYLOAD_REPO: ${{ github.repository }}
-        PAYLOAD_PKEY: ${{ secrets.PKEY }}
-        PAYLOAD_DIR: "c/subrep"
+        PAYLOAD_URL: 'https://github.com/otton-faros/hello-world-kedro.git'
       with:
-        repository: otton-faros/monorepo
-        event: sync_tree
+        repository: otton-faros/submodule_repo
+        event: sync_submod
         github_pat: ${{ secrets.pat_with_access }}
