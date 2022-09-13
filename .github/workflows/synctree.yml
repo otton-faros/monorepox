@@ -14,6 +14,7 @@ jobs:
       env:
         PAYLOAD_URL: 'https://github.com/otton-faros/hello-world-kedro.git'
         PAYLOAD_DIR: 'dags/hello-world'
+        PAYLOAD_PAT: ${{ secrets.pat_with_access }}
       with:
         repository: otton-faros/submodule_repo
         event: sync_submod
