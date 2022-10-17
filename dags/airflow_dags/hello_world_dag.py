@@ -42,7 +42,7 @@ with DAG(
     "hello-world",
     start_date=datetime(2019, 1, 1),
     max_active_runs=3,
-    schedule_interval=timedelta(minutes=1),  # https://airflow.apache.org/docs/stable/scheduler.html#dag-runs
+    schedule_interval=timedelta(minutes=3),  # https://airflow.apache.org/docs/stable/scheduler.html#dag-runs
     default_args=default_args,
     catchup=False,  # enable if you don't want historical dag runs to run
 ) as dag:
